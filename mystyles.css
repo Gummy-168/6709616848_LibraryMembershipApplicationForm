@@ -7,16 +7,19 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-color: aquamarine;
+    background-image: url("resource/libary lofi.jpg");
 }
 
 .wrapper {
     width: 600px;
-    background-color: blueviolet;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.589);
     color: aliceblue;
     border-radius: 15px;
     padding: 30px 40px;
     box-sizing: border-box;
+    backdrop-filter: blur(20px);
+
 }
 
 .wrapper h1 {
@@ -30,9 +33,8 @@ body {
     width: 100%;
     height: 50px;
     background: none;
-    /* เอาพื้นหลังออก */
     margin: 15px 0;
-    /* ปรับขนาด margin เพื่อลดช่องว่าง */
+
 }
 
 .wrapper .input-box input,
@@ -65,7 +67,7 @@ body {
 }
 
 .wrapper .input-box input::placeholder {
-    color: white;
+    color: rgba(255, 255, 255, 0.555);
 }
 
 .wrapper .checked {
